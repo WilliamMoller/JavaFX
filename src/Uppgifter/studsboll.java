@@ -29,11 +29,30 @@ public class studsboll extends Circle{
 					@Override
 					public void handle(long now) {
 						
-					for () {
+					for (studsboll studsboll : cir) {
+						studsboll.fall();
 						
 					}
 				}		
 			};
 		}
 	}
+
+		public void fall() {
+			
+			this.speedY += g;
+			
+			if (this.getTranslateY() + speedY > app.WINDOW_HEIGHT - this.getRadius()) {
+				speedY *= -1;
+			} else {
+				this.setTranslateY(this.getTranslateY() + speedY);
+			}
+		}
+		
+		
+		
 }
+
+
+
+
