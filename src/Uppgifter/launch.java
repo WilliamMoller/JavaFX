@@ -7,11 +7,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
-public class Studsboll extends Application{
+public class launch extends Application{
 
 	public static final double WINDOW_WIDTH = 800;
 	public static final double WINDOW_HEIGHT = 600;
-	static final int circleAmount = 13;
+	
 
 	public static void main(String[] args) {
 		launch();
@@ -24,9 +24,9 @@ public class Studsboll extends Application{
 
 		Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT);
 
-		for (int i = 3; i < circleAmount; i++) {
+		for (int i = 0; i < 10; i++) {
 
-			Circle cir = new Circle(i*3);
+			Circle cir = new Circle();
 
 			cir.setTranslateX(WINDOW_WIDTH * Math.random());
 			cir.setTranslateY(WINDOW_HEIGHT * Math.random());
