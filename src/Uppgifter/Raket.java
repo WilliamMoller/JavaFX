@@ -15,19 +15,19 @@ public class Raket extends Group {
 
 	public Raket(double width) {
 
-		Rectangle top = new Rectangle(width / 3, 3 * width / 3);
+		Rectangle top = new Rectangle(width / 3, 3 * width / 3, Color.RED);
 
 		Polygon righttriangle = new Polygon();
-		righttriangle.getPoints().addAll(new Double[] { 25.0, 100.0, 25.0, 20.0, 60.0, 75.0 });
-		righttriangle.setFill(Color.BLACK);
+		righttriangle.getPoints().addAll(new Double[] { 25.0, 75.0, 25.0, 50.0, 60.0, 85.0 });
+		righttriangle.setFill(Color.RED);
 
 		Polygon lefttriangle = new Polygon();
-		lefttriangle.getPoints().addAll(new Double[] { 0.0, 100.0, 0.0, 20.0, -35.0, 75.0 });
-		lefttriangle.setFill(Color.BLACK);
+		lefttriangle.getPoints().addAll(new Double[] { 0.0, 75.0, 0.0, 50.0, -35.0, 85.0 });
+		lefttriangle.setFill(Color.RED);
 
 		Polygon toptriangle = new Polygon();
-		toptriangle.getPoints().addAll(new Double[] { 25.0, 0.0, 0.0, 0.0, 12.5, -80.0 });
-		toptriangle.setFill(Color.BLACK);
+		toptriangle.getPoints().addAll(new Double[] { 25.0, 0.0, 0.0, 0.0, 12.5, -50.0 });
+		toptriangle.setFill(Color.RED);
 
 		turbo = new Polygon();
 		turbo.getPoints().addAll(new Double[] { 0.0, 75.0, 25.0, 75.0, 12.5, 100.0 });

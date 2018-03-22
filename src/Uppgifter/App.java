@@ -10,7 +10,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class main extends Application {
+public class App extends Application {
 
 	public static final double WINDOW_WIDTH = 800;
 	public static final double WINDOW_HEIGHT = 600;
@@ -18,7 +18,7 @@ public class main extends Application {
 
 	public static final ArrayList<KeyCode> keys = new ArrayList<KeyCode>();
 
-	public static void main1(String[] args) {
+	public static void main(String[] args) {
 		launch();
 	}
 
