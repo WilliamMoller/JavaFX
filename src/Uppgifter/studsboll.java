@@ -16,9 +16,9 @@ public class studsboll extends Circle{
 		
 		public studsboll() {
 			
-			this.setRadius(Math.random()* 20 + 20);
+			this.setRadius(Math.random()* 10 + 15);
 			this.speedY = 0;
-			this.speedX = Math.random();
+			this.speedX = Math.random() * 5;
 			
 			bollar.add(this);
 		}
