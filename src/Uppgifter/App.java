@@ -12,8 +12,8 @@ import javafx.stage.Stage;
 
 public class App extends Application {
 
-	public static final double WINDOW_WIDTH = 800;
-	public static final double WINDOW_HEIGHT = 600;
+	public static final double WINDOW_WIDTH = 1300;
+	public static final double WINDOW_HEIGHT = 900;
 	public static final double raket_SIZE = 75;
 
 	public static final ArrayList<KeyCode> keys = new ArrayList<KeyCode>();
