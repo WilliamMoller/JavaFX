@@ -12,11 +12,13 @@ public class studsboll extends Circle{
 		private static double g = 0.982/3;
 		
 		private double speedY;
+		private double speedX;
 		
 		public studsboll() {
 			
 			this.setRadius(Math.random()* 20 + 20);
 			this.speedY = 0;
+			this.speedX = Math.random();
 			
 			bollar.add(this);
 		}
@@ -47,6 +49,14 @@ public class studsboll extends Circle{
 				speedY *= -1;
 			} else {
 				this.setTranslateY(this.getTranslateY() + speedY);
+			}
+			
+			if (this.getTranslateX() + speedX > launch.WINDOW_WIDTH - this.getRadius()) {
+				speedX *= -1;
+			} else if (this.getTranslateX() + speedX < 0 + this.getRadius()) {
+				speedX *= -1;
+			} else {
+				this.setTranslateX(this.getTranslateX() + speedX );
 			}
 		}
 		
